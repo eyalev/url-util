@@ -16,6 +16,10 @@ class URL:
         return self.path_parts[0]
 
     @property
+    def second_path_part(self):
+        return self.path_parts[1]
+
+    @property
     def path_parts(self):
         return self.furl.path.segments
 
